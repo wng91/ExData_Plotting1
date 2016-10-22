@@ -7,7 +7,7 @@ u=read.table(t,header = FALSE,sep=';',skip= 66637,nrows = 2880,stringsAsFactors 
 colnames(u)=names(header)
 
 #combine the date and time and change their class
-f=paste(s$Date,s$Time)
+f=paste(u$Date,u$Time)
 Day=strptime(f,"%d/%m/%Y %H:%M:%S")
 #plot the required graph and save it in png file
 
