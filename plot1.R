@@ -8,4 +8,4 @@ colnames(u)=names(header)
 #plot the histogram and save in png file
 png('plot1.png')
 hist(u$Global_active_power,col='red',main='Global Active Power',ylab = 'Frequency',xlab='Global Active Power(kilowatts) ')
-dev.off 
+dev.off() 
